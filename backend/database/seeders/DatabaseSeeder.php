@@ -14,6 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        //Thropugh Seeder
+        $this->call([
+            UserTableSeeder::class,
+        ]);
+
+        //trough factory
         // \App\Models\User::factory(10)->create();
     }
 }
